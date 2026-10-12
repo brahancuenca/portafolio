@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Desarrollador de Software / ADSO</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #0ea5e9;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0 1rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 5rem 1rem 3rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        header h1 span {
+            color: var(--accent-color);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-color);
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto 4rem auto;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .about-card, .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .about-card:hover, .project-card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .skill-category p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .project-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tag {
+            background-color: #0f172a;
+            color: var(--accent-color);
+            font-size: 0.8rem;
+            padding: 0.3rem 0.7rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #0f172a;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hola, soy <span>BRAHAN ENRIQUE PULIDO CUENCA</span></h1>
+        <p>Tecnólogo ADSO (SENA) | Desarrollador Full-Stack & Arquitectura de Software</p>
+        <div class="badge">Buscando Práctica / Contrato de Aprendizaje (Dic 2026)</div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN SOBRE MÍ -->
+        <section>
+            <h2>Sobre Mí</h2>
+            <div class="about-card">
+                <p> Aprendiz SENA en Tecnología en Análisis y Desarrollo de Software (ADSO), disponible para iniciar 
+                    contrato de aprendizaje. Cuento con conocimientos técnicos en el desarrollo full-stack, diseño de 
+                    arquitecturas de software y aplicación de buenas prácticas de ingeniería (principios 
+                    SOLID, patrones de diseño, testing, control de versiones con Git, metodologías ágiles, 
+                    Docker). Dominio técnico en ecosistemas modernos: Python (Django / DRF), JavaScript / 
+                    TypeScript (React.js, Node.js, Angular, NestJS, Next.js), PHP (Laravel), Java (Spring) y 
+                     gestión de bases de datos relacionales (MySQL, SQL Server). Enfoque analítico orientado 
+                    al diseño y consumo de APIs RESTful y a la creación de soluciones tecnológicas 
+                    escalables enfocadas en automatización, multicanalidad y optimización de procesos 
+                    comerciales, complementado con experiencia previa en atención y gestión de ventas de 
+                    alto flujo. Con alta disposición para iniciar la etapa práctica a partir de diciembre de 2026.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN HABILIDADES -->
+        <section>
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="about-card skill-category">
+                    <h3>Backend & APIs</h3>
+                    <p>Python (Django), Node.js, NestJS, PHP (Laravel), Java (Spring), Arquitectura RESTful.</p>
+                </div>
+                <div class="about-card skill-category">
+                    <h3>Frontend</h3>
+                    <p>React.js, Angular, Next.js, TypeScript, JavaScript, HTML5, CSS3.</p>
+                </div>
+                <div class="about-card skill-category">
+                    <h3>Bases de Datos & DevOps</h3>
+                    <p>MySQL, SQL Server, Git / GitHub, Docker básico, Metodologías Ágiles (Scrum).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PROYECTOS -->
+        <section>
+            <h2>Proyectos Destacados (Ingeniería y Arquitectura)</h2>
+            
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <h3>1. OmniCRM & Softphone Multicanal (Proyecto Estrella)</h3>
+                <p>Sistema CRM omnicanal diseñado para PyMEs, enfocado en la reducción de costos en llamadas mediante softphone VoIP/SIP integrado, gestión de leads y automatización inicial con chatbot de WhatsApp y formularios web.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Django</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">WebRTC/SIP</span>
+                    <span class="tag">UML & Arquitectura</span>
+                </div>
+                <a href="https://github.com/tu-usuario/tu-repositorio" class="btn" target="_blank">Ver Repositorio & Documentación</a>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <h3>2. Sistema de Inventario y Facturación Inteligente</h3>
+                <p>Plataforma CRUD avanzada para control de stock en comercios locales. Incluye alertas predictivas de inventario bajo, gestión de roles de usuario (Admin/Vendedor) y reportes analíticos en tiempo real.</p>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">React.js</span>
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">Validaciones Robustas</span>
+                </div>
+                <a href="https://github.com/tu-usuario/tu-repositorio" class="btn" target="_blank">Ver Repositorio</a>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <h3>3. Plataforma de Reservas y Citas (API REST Full Stack)</h3>
+                <p>Aplicación desacoplada para gestión de citas y disponibilidad horaria. Desarrollada con arquitectura cliente-servidor, documentación de endpoints tipo Swagger y bloqueo automático de horarios en base de datos.</p>
+                <div class="tags">
+                    <span class="tag">Java / Spring o PHP (Laravel)</span>
+                    <span class="tag">Angular / TypeScript</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">API REST</span>
+                </div>
+                <a href="https://github.com/tu-usuario/tu-repositorio" class="btn" target="_blank">Ver Repositorio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contacto: <a href="brahan.bpc@gmail.com">brahan.bpc@gmail.com</a> | 
+           <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a> | 
+           <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>
